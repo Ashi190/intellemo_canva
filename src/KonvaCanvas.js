@@ -220,7 +220,7 @@ const loadCanvas = () => {
   if (!videoRef) return;
 
   const update = () => {
-    setElements(e => [...e]); // Forces re-render
+    setElements(e => [...e]); 
     requestAnimationFrame(update);
   };
 
@@ -304,11 +304,11 @@ const loadCanvas = () => {
           <button onClick={handleRedo}>↪️ Redo</button>
         </div>
 
-        <div className="group">
+        {/* <div className="group">
           <button onClick={() => changeZ(true)}>⬆️ Front</button>
           <button onClick={() => changeZ(false)}>⬇️ Back</button>
           
-        </div>
+        </div> */}
 
         <div className="group">
   <button onClick={saveCanvas}>💾 Save</button>
